@@ -6,6 +6,13 @@ The app revolves around a quiz making and solving app that mocks the API and all
 
 ## How to run?
 
+First ensure that there is an `.env` file in the root directory with the following contents:
+```
+REACT_APP_MOCKED_SERVICE_WORKER=true
+```
+
+This enables a mocked backend service that uses a service worker to manipulate data.
+
 In the project directory, you can run:
 
 ### `npm install`
