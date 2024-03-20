@@ -36,7 +36,7 @@ const renderRoot = () => {
 };
 
 // Starting the mocked backend service worker.
-if (process.env.NODE_ENV === 'development' && process.env.REACT_APP_MOCKED_SERVICE_WORKER === 'true') {
+if (process.env.REACT_APP_MOCKED_SERVICE_WORKER === 'true') {
   const { worker } = require('./mocks/browser');
   worker.start().then(() => {
     renderRoot();
